@@ -1,0 +1,53 @@
+body {
+    background-color: #FBFBFB;
+}
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+#menu_itens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+#lista_produtos_produtos{
+    display: none;
+}
+#lista_produtos a:hover ~ #lista_produtos_produtos{
+    display: block;
+}
+
+.rodape {
+    background-color: #ff2f93c9;
+}
+
+.rodape_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info_do_rodape {
+    display: flex;
+    justify-content: space-around;
+    
+    align-items: center;
+}
+
+.elementos_rodape {
+    
+}
