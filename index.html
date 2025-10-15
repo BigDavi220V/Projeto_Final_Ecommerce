@@ -5,24 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IZZI FITNESS</title>
     <link rel="stylesheet" href="./CSS/styles_roupas.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
     </head>
 <body>
 
     <header class="cabecalho">
-        <div id="imagem_logo">
-        <img src="./assets/Logo_IZ_sem_nome.jpeg" class="logo_sem_nome" style="width: 200px; height: 200px;">
-        </div>
-        <div id="titulo_loja">
-        <h1>IZZI FITNESS</h1>
-        <p>Nunca é só um treino</p>
+        <div class="icon_menu">
+            <i class="ph ph-list"></i>
         </div>
 
+        <div id="imagem_logo">
+        <img src="./assets/Logo_IZ_com_nome.jpeg" class="logo_sem_nome" style="width: 200px; height: 200px;">
+        </div>
+        <div class="icon_login">
+            <i class="ph ph-user" id="icon_login"></i>
+        </div>
+
+        
         </header>
     
     <div class="nave">
     <nav class="menu">
         <ul id="menu_itens">
-            <li><a href="#inicio">Início</a></li>
+            <li>
+                <div class="botao_home">
+                    <a><i class="ph ph-house"></i></a>
+                    <a href="">Início</a>
+                </div>
+            </li>
             <li id="lista_produtos"><a href="#produtos">Produtos</a>
                 <ul id="lista_produtos_produtos">
                     <li><a href="leggings.html">Leggings</a></li>
@@ -35,96 +49,33 @@
             <li><a href="#ofertas">Ofertas</a></li>
             <li><a href="#contato">Contato</a></li>
             <li><a href="carrinho.html" aria-label="Carrinho de Compras">🛒Carrinho</a></li>
-            <li><a href="login.html" aria-label="Minha Conta">👤Login</a></li>
+            
         </ul>
     </nav>
     </div>
 
 
     <main>
-
-        <section id="inicio" class="hero">
-            <h2>Vista a sua melhor performance.</h2>
-            <a href="#lancamentos" class="botao-cta">Ver Lançamentos</a>
-            </section>
-
-        <section id="produtos" class="vitrine">
-            <h2>Nossas Categorias Fitness</h2>
-            <div class="lista-categorias">
-                <article class="categoria-item">
-                    <img src="legging-thumb.jpg" alt="Imagem de Legging Fitness">
-                    <h3>Leggings</h3>
-                    <p>Conforto e compressão para qualquer treino.</p>
-                    <a href="leggings.html">Ver Mais</a>
-                </article>
-
-                <article class="categoria-item">
-                    <img src="top-thumb.jpg" alt="Imagem de Top Fitness">
-                    <h3>Tops e Sutiãs</h3>
-                    <p>Sustentação ideal com estilo.</p>
-                    <a href="tops.html">Ver Mais</a>
-                </article>
-
-                </div>
-        </section>
-
-        <section class="destaques">
-            <h2>Produtos em Destaque</h2>
-            <div class="lista-produtos">
-                <article class="produto">
-                    <img src="produto1.jpg" alt="Nome do Produto 1">
-                    <h4>Top Performance X</h4>
-                    <p class="preco">R$ 129,90</p>
-                    <button>Adicionar ao Carrinho</button>
-                    <a href="detalhe-produto1.html">Ver Detalhes</a>
-                </article>
-                </div>
-        </section>
-
-        <section class="newsletter">
-            <h2>Fique por Dentro!</h2>
-            <p>Receba ofertas exclusivas e dicas de treino.</p>
-            <form action="/subscribe" method="POST">
-                <input type="email" placeholder="Seu melhor e-mail" required>
-                <button type="submit">Inscrever-se</button>
-            </form>
-        </section>
-
     </main>
 
+    
     <footer class="rodape">
-        <div class="rodape-links">
-
-            <div class="elementos_rodape">
-            <section class="info_do_rodape">
-                <h3>Informações</h3>
-                <ul>
-                    <li><a href="sobre.html">Sobre Nós</a></li>
-                    <li><a href="trocas.html">Política de Troca</a></li>
-                    <li><a href="pagamento.html">Formas de Pagamento</a></li>
-                </ul>
-                </div>
-            </section>
-            <div class="elementos_rodape">
-            <section class="info_do_rodape">
-                <h3>Ajuda</h3>
-                <ul>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contato.html">Fale Conosco</a></li>
-                </ul>
-            </section>
-        </div>
-        <div class="elementos_rodape">
-        <section class="info_do_rodape">
-                <h3>Siga-nos</h3>
-                <a href="#" aria-label="Instagram">📷</a>
-                <a href="#" aria-label="Facebook">📘</a>
-            </section>
-        </div>
+        <div class="rodape_redes_sociais">
+            <ul>
+                <i class="ph ph-instagram-logo"></i>
+                <i class="ph ph-facebook-logo"></i>
+                <i class="ph ph-whatsapp-logo"></i>
+            </ul>
         </div>
 
-        <p class="copyright">&copy; 2025 Fitness Chic. Todos os direitos reservados.</p>
+        <div id="copyright">
+        <p class="copyright">&copy; 2025 IZZI FITNESS. Todos os direitos reservados.</p>
+        </div>
+
+        <div id="imagem_logo_rodape">
+            <img id="logo_rodape" src="./assets/Logo_IZ_sem_nome.jpeg">
+        </div>
     </footer>
-
+    
 </body>
 </html>
