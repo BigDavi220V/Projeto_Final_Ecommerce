@@ -6,59 +6,90 @@
     <title>IZZI FITNESS</title>
     <link rel="stylesheet" href="./CSS/styles_roupas.css">
     <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
     />
-    </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+</head>
 <body>
 
     <header class="cabecalho">
-        <div class="icon_menu">
-            <i class="ph ph-list"></i>
-        </div>
-
+    <div class="logo_e_login">
         <div id="imagem_logo">
-        <img src="./assets/Logo_IZ_com_nome.jpeg" class="logo_sem_nome" style="width: 200px; height: 200px;">
-        </div>
-        <div class="icon_login">
-            <i class="ph ph-user" id="icon_login"></i>
-        </div>
-
-        
-        </header>
-    
-    <div class="nave">
-    <nav class="menu">
-        <ul id="menu_itens">
-            <li>
-                <div class="botao_home">
-                    <a><i class="ph ph-house"></i></a>
-                    <a href="">Início</a>
-                </div>
-            </li>
-            <li id="lista_produtos"><a href="#produtos">Produtos</a>
-                <ul id="lista_produtos_produtos">
-                    <li><a href="leggings.html">Leggings</a></li>
-                    <li><a href="tops.html">Tops e Sutiãs</a></li>
-                    <li><a href="blusas.html">Blusas e Camisetas</a></li>
-                    
-                </ul>
-            </li>
-            <li><a href="#lancamentos">Lançamentos</a></li>
-            <li><a href="#ofertas">Ofertas</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a href="carrinho.html" aria-label="Carrinho de Compras">🛒Carrinho</a></li>
-            
-        </ul>
-    </nav>
+            <img src="./assets/Logo_IZ_com_nome.png" class="logo_sem_nome" style="width: 150px; ">
+        </div>    
     </div>
+        <div class="nave">
+            <nav class="menu">
+                <ul id="menu_itens">
+                    <li>
+                        <div class="botao_home">
+                            <a href="">Início</a>
+                        </div>
+                    </li>
+                    
+                    <li id="lista_produtos"><a href="#produtos">Produtos</a>
+                        <ul id="lista_produtos_produtos">
+                            <li><a href="leggings.html">Leggings</a></li>
+                            <li><a href="tops.html">Tops e Sutiãs</a></li>
+                            <li><a href="blusas.html">Blusas e Camisetas</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#lancamentos">Lançamentos</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="carrinho.html" aria-label="Carrinho de Compras">🛒Carrinho</a></li>
+                    <li>
+                        <div class="icon_login">
+                            <i class="ph ph-user" id="icon_login"></i>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
 
-    <main>
+
+    <main class="apresentacao">
+        <div class="super">
+            <div class="apresentacao_produto_01">
+                <div class="insert_productor"></div>
+
+                <div class="selecao_cor">
+
+                    <div class="cheack_cor" id="cor_rosa">
+                      <i class="ph ph-square"></i>
+                    </div>
+
+                    <div class="cheack_cor" id="cor_azul_claro">
+                        <i class="ph ph-square"></i>
+                    </div>
+
+                    <div class="cheack_cor" id="cor_azul_escuro">
+                        <i class="ph ph-square"></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="apresentacao_produto_02">
+                <div class="insert_productor_02"></div>
+
+                <div class="selecao_cor">
+
+                <div class="cheack_cor" id="cor_preto">
+                    <i class="ph ph-square"></i>
+                </div>
+            </div>
+        </div>
     </main>
 
-    
+
     <footer class="rodape">
         <div class="rodape_redes_sociais">
             <ul>
@@ -69,13 +100,13 @@
         </div>
 
         <div id="copyright">
-        <p class="copyright">&copy; 2025 IZZI FITNESS. Todos os direitos reservados.</p>
+            <p class="copyright">&copy; 2025 IZZI FITNESS. Todos os direitos reservados.</p>
         </div>
 
         <div id="imagem_logo_rodape">
-            <img id="logo_rodape" src="./assets/Logo_IZ_sem_nome.jpeg">
+            <img id="logo_rodape" src="./assets/Logo_IZ_sem_nome.jpeg" style="width: 100px; height: 100px;">
         </div>
     </footer>
-    
+
 </body>
 </html>
