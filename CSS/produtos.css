@@ -1,0 +1,75 @@
+@import url('https://fonts.example.com/css?family=Helvetica');
+.name_productor {
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: medium;
+    font-weight: 1000;
+    color: black;
+    font-style: right;
+    text-align: center;
+    
+}
+
+.text_price {
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: medium;
+    font-weight: 900;
+    color: black;
+    font-style: right;
+    font-display: swap;
+    text-align: center;
+
+}
+.display_button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+
+.btn_group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.3rem;
+
+}
+.carrinho_compras{
+    color:beige;;
+    font-size: xx-large;
+}
+
+.comprar_produto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    background-color: pink;
+    text-align: center;
+    border: none;
+    border-radius: 1rem;
+}
+
+.ir_comprar {
+    text-decoration: none;
+    color: beige;
+    font-size: medium;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.carrinho_produto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    background-color: pink;  
+    border: none; 
+    border-radius: 1rem;
+}
+
+

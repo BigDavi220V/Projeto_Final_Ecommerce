@@ -1,7 +1,21 @@
+body{
+    background-color: #FBFBFB;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.icon_image_fundo_aviao {
+
+    color: #ff2f933d;
+    font-size: 4000%;
+    border: none;
+}
+
 .formulario {
     display: flex;
     flex-direction: column;
-    width: 20rem;;
+    width: 20rem;
    
     
 }
@@ -12,7 +26,8 @@
     height: 10rem;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     margin: 10rem;
     padding: 10rem;
+    margin-bottom: 15rem;
 }
