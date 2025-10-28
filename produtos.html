@@ -5,14 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IZZI FITNESS</title>
     <link rel="stylesheet" href="./CSS/styles_roupas.css">
+    <link rel="stylesheet" href="./CSS/index.css">
     <link rel="stylesheet" href="./CSS/produtos.css">
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     
 </head>
 <body>
 
-    <header class="cabecalho">
+      <header class="cabecalho">
         <div class="logo_e_login">
             <div id="imagem_logo">
                 <img src="./assets/Logo_IZ_com_nome.png" class="logo_sem_nome" style="width: 150px; " href="./index.html">
@@ -22,30 +32,31 @@
                 <nav class="menu">
                     <ul id="menu_itens">
                         <li>
-                            <div class="botao_home">
-                                <a href="./index.html">Início</a>
+                            <div class="menu_style" id="pagina_home">
+                                <a class="menu_style" id="inicio" href="./index.html">Início</a>
                             </div>
                         </li>
                         
-                        <li id="lista_produtos"><a href="./produtos.html">Produtos</a>
-                            <ul id="lista_produtos_produtos">
+                        <li class="menu_style" id="lista_produtos"><a class="menu_style" id="pagina_produto" href="./produtos.html">Produtos</a>
+                            <ul class="menu_style" id="lista_produtos_produtos">
                                 <li><a href="leggings.html">Leggings</a></li>
                                 <li><a href="tops.html">Tops e Sutiãs</a></li>
                                 <li><a href="blusas.html">Blusas e Camisetas</a></li>
                             </ul>
                         </li>
-                        <li><a href="./contato.html">Contato</a></li>
-                        <li><a href="carrinho.html" aria-label="Carrinho de Compras">🛒Carrinho</a></li>
+                        <li><div class="menu_style" id="contato"><a class="menu_style" id="contato_contato" href="./contato.html">Contato</a></div></li>
+                        <li><a class="menu_style" id="carrinho_compras" href="carrinho.html" aria-label="Carrinho de Compras">🛒Carrinho</a></li>
                         <li>
+                           
                             <div class="icon_login">
                                 <i class="ph ph-user" id="icon_login"></i>
                             </div>
+                            
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
-
 
 
     <main>

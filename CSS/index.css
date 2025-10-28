@@ -1,4 +1,31 @@
 
+.menu_style:hover {
+    background-color: #dd1569;
+    color: #FBFBFB;
+    font-weight: 700;
+}
+/* #inicio:hover {
+    background-color: #dd1569;
+    color: #FBFBFB;
+    font-weight: 700;
+}
+#lista_produtos:hover{
+    background-color: #dd1569;
+    color: #FBFBFB;
+    font-weight: 700;
+}
+
+#contato_contato:hover{
+    background-color: #dd1569;
+    color: #FBFBFB;
+    font-weight: 700;
+}
+#carrinho_compras:hover {
+    background-color: #dd1569;
+    color: #FBFBFB;
+    font-weight: 700;
+} */
+
 .apresentacao {
     justify-content: space-around;
     align-items: center;

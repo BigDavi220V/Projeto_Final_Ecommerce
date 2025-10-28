@@ -47,12 +47,16 @@ body {
     gap: 10rem;
     list-style-type: none;
     width: 100%;  
+    
 }
 
 #menu_itens a{
     text-decoration: none;
-    color: #000;
+    color: #FBFBFB;
+    font-size: 1.5rem;
+    font-weight: 350;
 }
+
 
 #lista_produtos_produtos{
     display: none;
@@ -70,95 +74,6 @@ body {
     gap: 1rem;
     
 }
-
-.super{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.apresentacao_produto_01{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.apresentacao_produto_02{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 0.5rem;
-    
-}
-
-.selecao_cor{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.insert_productor{
-    width: 300px; /* Ajuste conforme o style inline do HTML */
-    height: 500px; /* Ajuste conforme o style inline do HTML */
-    background-image: url('../assets/Modelo_01.png'); /* Imagem Padrão (Rosa) */
-    background-size: contain; /* Garante que a imagem caiba */
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: background-image 0.3s ease-in-out; /* Adiciona uma transição suave */
-}
-
-.insert_productor img {
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    display: block; /* Garante que o elemento ocupe o espaço */
-}
-
-
-
-/* --- ESTILOS DAS CORES (Com IDs atualizados) --- */
-
-#cor_rosa{
-    font-size: 0.5rem; /* Aumentei o tamanho para melhor visualização */
-    background-color: pink;
-    color: pink;
-    cursor: pointer; /* Adiciona cursor de ponteiro */
-}
-
-#cor_azul_claro{
-    font-size: 0.5rem; /* Aumentei o tamanho para melhor visualização */
-    background-color: blue;
-    color: blue;
-    cursor: pointer;
-}
-
-#cor_azul_escuro{
-    font-size: 0.5rem; /* Aumentei o tamanho para melhor visualização */
-    background-color: #0c7ea1;
-    color: #0c7ea1;
-    cursor: pointer;
-}
-
-.insert_productor_02{
-    width: 300px; /* Ajuste conforme o style inline do HTML */
-    height: 500px; /* Ajuste conforme o style inline do HTML */
-    background-image: url('../assets/Modelo_01_preto.png'); /* Imagem Padrão (Rosa) */
-    background-size: contain; /* Garante que a imagem caiba */
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: background-image 0.3s ease-in-out; /* Adiciona uma transição suave */
-}
-
-#cor_preto{
-    font-size: 0.5rem; /* Aumentei o tamanho para melhor visualização */
-    background-color: black;
-    color: black;
-    cursor: pointer;
-}
-
 .rodape {
     margin-top: 7rem;
     background-color: #ff2f933d;

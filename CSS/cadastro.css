@@ -1,0 +1,83 @@
+/* Paleta de Cores: */
+/* Rosa Principal: #E6007E (aproximado do top) */
+/* Preto: #1A1A1A */
+/* Cinza Claro: #F4F4F4 */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Fundo baseado na imagem gerada */
+    background: url('../assets/Imagem_modelo_login.png') no-repeat center center / cover; 
+    position: relative;
+    /* Adiciona um overlay escuro para o texto ficar legível */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Overlay escuro */
+    z-index: 1;
+}
+
+.cadastro-container {
+    background-color: rgba(255, 255, 255, 0.95); /* Fundo branco semi-transparente */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    z-index: 2; /* Fica acima do overlay */
+}
+
+h1 {
+    text-align: center;
+    color: #E6007E;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que padding não aumente a largura total */
+    font-size: 16px;
+}
+
+.btn-cadastro {
+    width: 100%;
+    padding: 15px;
+    background-color: #E6007E; /* Rosa de destaque */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cadastro:hover {
+    background-color: #C0006B; /* Rosa mais escuro ao passar o mouse */
+}
