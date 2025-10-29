@@ -1,33 +1,303 @@
-body{
-    background-color: #FBFBFB;
-    margin: 0;
-    padding: 0;
-    
+/* Variáveis globais para as cores, se ainda não estiverem definidas em um arquivo global */
+:root {
+    --primary-pink: #ff2f93; /* Rosa principal do tema */
+    --light-pink: #F8BBD0; /* Rosa mais claro */
+    --dark-pink: #C2185B; /* Rosa mais escuro para botões/destaques */
+    --text-dark: #333;
+    --text-light: #666;
+    --border-color: #DDD;
+    --background-grey: #F5F5F5;
+    --card-background: #FFF;
 }
 
-.icon_image_fundo_aviao {
-
-    color: #ff2f933d;
-    font-size: 4000%;
-    border: none;
-}
-
-.formulario {
+/* Garante que o body da página de contato tenha a cor de fundo correta */
+/* Se você tiver um body global, pode precisar de um seletor mais específico aqui */
+.apresentacao-contato { /* A nova classe do <main> */
+    background-color: var(--primary-pink); /* Cor de fundo externa da página de contato */
     display: flex;
-    flex-direction: column;
-    width: 20rem;
-   
-    
-}
-
-.apresentacao {
-    gap: 2rem;
-    display: flex;
-    height: 10rem;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    margin: 10rem;
-    padding: 10rem;
-    margin-bottom: 15rem;
+    padding: 10px;
 }
+
+.contact-container { /* A nova classe para o container principal */
+    display: flex;
+    background-color: var(--card-background);
+    /* border-radius: 20px; */
+    overflow: hidden;
+    /* max-width: 1200px; */
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-card,
+.image-info-card {
+    flex: 1;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-card {
+    background-color: var(--card-background);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.image-info-card {
+    background: linear-gradient(135deg, var(--primary-pink) 0%, var(--dark-pink) 100%);
+   
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    overflow: hidden; /* Importante para a imagem não vazar */
+}
+
+
+
+.logo-form { /* Estilos para o logo dentro do formulário */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-form img {
+    max-width: 120px; /* Ajuste o tamanho do logo no formulário */
+    height: auto;
+}
+
+.form-section h1 {
+    color: var(--text-dark);
+    margin-bottom: 10px;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+.form-section p {
+    color: var(--text-light);
+    margin-bottom: 30px;
+    font-size: 0.9em;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 0.95em;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif; /* Certifique-se de que Poppins está importado em algum lugar */
+    font-size: 0.9em;
+    color: var(--text-dark);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: var(--primary-pink);
+}
+
+.input-group .icon-indicator {
+    position: absolute;
+    right: 15px;
+    top: 65%;
+    transform: translateY(-50%);
+    color: var(--primary-pink);
+    font-size: 0.6em;
+}
+
+.textarea-group {
+    margin-bottom: 30px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-pink);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: var(--dark-pink);
+}
+
+.contato_img_contato_logo {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.image-container {
+    width: 100%;
+    max-height: 100%; /* Limite a altura da imagem */
+    margin-bottom: 20px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Alinhe a imagem à parte inferior do contêiner */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: auto;
+    z-index: 1;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .contact-container {
+        flex-direction: column;
+        max-width: 600px;
+    }
+
+    .contact-form-card,
+    .image-info-card {
+        border-radius: 20px;
+        padding: 30px;
+    }
+
+    /* .image-info-card {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        margin-top: -20px;
+        padding-top: 50px;
+    } */
+
+    .logo-form {
+        margin-bottom: 20px;
+    }
+
+    .form-section h1 {
+        font-size: 1.8em;
+    }
+
+    .form-section p {
+        margin-bottom: 20px;
+    }
+
+    .image-container {
+        margin-bottom: 30px;
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .apresentacao-contato {
+        padding: 15px;
+    }
+
+    .contact-form-card,
+    .image-info-card {
+        padding: 20px;
+    }
+
+    .form-section h1 {
+        font-size: 1.5em;
+    }
+
+    .input-group label {
+        font-size: 0.9em;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        padding: 10px 12px;
+        font-size: 0.85em;
+    }
+
+    .submit-button {
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    .social-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1.1em;
+    }
+}
+
+/* Para o cabeçalho e rodapé, você já tem os seus estilos em outros arquivos CSS.
+   Certifique-se de que não haja conflitos com as novas classes e IDs.
+   Você pode precisar adicionar variáveis CSS para altura do header/footer
+   para que o main possa se posicionar corretamente.
+*/
+
+/* Exemplo de como definir variáveis de altura para header/footer (adicione em um CSS global se tiver) */
+/*
+:root {
+    --header-height: 120px; 
+    --footer-height: 150px;
+}
+*/

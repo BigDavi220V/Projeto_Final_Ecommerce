@@ -6,7 +6,8 @@ body {
 }
 
 .cabecalho {
-    background-color: #ff2f933d;
+    /* background-color: #ff2f933d; */
+    background-color: #ff2f93;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -75,8 +76,9 @@ body {
     
 }
 .rodape {
-    margin-top: 7rem;
-    background-color: #ff2f933d;
+    /* margin-top: 7rem; */
+    /* background-color: #ff2f933d; */
+    background-color: #ff2f93;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,7 +90,8 @@ body {
     color: #FBFBFB;
     font-weight: 700;
 }
-
-#logo_rodape{
-    width: 10rem;   
+.copyright {
+    color: #FBFBFB;
+    font-weight: 700;
 }
+

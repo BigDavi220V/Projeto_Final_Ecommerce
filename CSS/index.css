@@ -1,31 +1,17 @@
 
 .menu_style:hover {
-    background-color: #dd1569;
+    background-color: #fbfbfb31;
     color: #FBFBFB;
-    font-weight: 700;
-}
-/* #inicio:hover {
-    background-color: #dd1569;
-    color: #FBFBFB;
-    font-weight: 700;
-}
-#lista_produtos:hover{
-    background-color: #dd1569;
-    color: #FBFBFB;
-    font-weight: 700;
+    font-weight: 900;
+    text-decoration:underline;
 }
 
-#contato_contato:hover{
-    background-color: #dd1569;
+#menu_style:hover {
+    background-color: #fbfbfb2f;
     color: #FBFBFB;
-    font-weight: 700;
+    font-weight: 900;
+    text-decoration:underline;
 }
-#carrinho_compras:hover {
-    background-color: #dd1569;
-    color: #FBFBFB;
-    font-weight: 700;
-} */
-
 .apresentacao {
     justify-content: space-around;
     align-items: center;
